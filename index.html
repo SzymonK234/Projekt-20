@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="PL">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value</title>
+    <title> placeholder, checked, ilość znaków, przedziały</title>
     <style>
         div{
             flex-direction: column;
@@ -15,70 +16,33 @@
             display: flex;
             flex-direction: column;
             
-            border: 2px solid blue;
-            border-radius: 10px;
-            padding: 20px;
+            border: 2px solid brown;
+            border-radius: 15px;
+            padding: 40px;
             background-color: silver;
             width: 300px;
-            
-        
-        
-        
-        
-        
         }
-    
-        
+        input{margin-bottom: 20px;}
     </style>
 </head>
 <body>
     <div>
-    <form>
-        <label for="imie">Imie:</label>
-        <input type="text" value="JanKowalski" id="imie">
+        <form>
+            <label for="imie">Imie</label>
+            <input type="text" id="imie" placeholder="Michał">
+
+            <label for="plec">Płeć</label>
+            <input type="radio" name="1" value="male" checked id="plec"> Mężczyzna
+            <input type="radio" name="1" value="female" id="plec"> Kobieta
         
-        <label for="email">Email:</label>
-        <input type="email" value="aha@gmail.com" id="email">
-        
-        <label for="cyfra">Wybierz swój cyfer:</label>
-        <input type="number" value="1234" id="cyfra">
+            <label for="wl">Wybierz liczbe od 1 do 1000</label>
+            <input placeholder="liczba od 1 do 1000" type="range" min="1" max="1000" id="wl">
 
-        <label for="tel">telefon:</label>
-        <input type="tel" value="123456789" id="tel">
-        
-        <label for="tekst">tekst:</label>
-        <input type="textarea" value="siemasiemasiemasiemasiema" style="width: 300px; height: 50px;" id="tekst">
-        
-        <label for="data">data:</label>
-        <input type="date" value="2026-01-01" id="data">
-    
-    <label for="kraj">Imie:</label>   
-    <select name="kraj" id="kraj">
-        <option value="pl" >Polska</option>
-        <option value="de" >Niemcy</option>
-        <option value="us" >USA</option>
-    </select>
-
-    
-        <label><input type="radio" name="plec" value="M"> Mężczyzna</label>
-        <label><input type="radio" name="plec" value="K"> Kobieta</label>
-        
-        <label><input type="checkbox" name="zainteresowania" value="sport">Sport</label>
-        <label><input type="checkbox" name="zainteresowania" value="gitara">gitara</label>
-        <label><input type="checkbox" name="zainteresowania" value="fortnocy">fortnocy</label>
-        <label><input type="checkbox" name="zainteresowania" value="nie mam">nie mam</label>
-
-        <input type="color" value="#00FF00">
-
-        <input type="reset" value="Wyczyść">
-        <input type="submit" value="Wyślij">
+            <label for="">od 10 do 200 znaków</label>
+            <textarea placeholder="od 10 do 200 znaków" name="wiadomosc" rows="4" cols="40"></textarea>
 
 
-    
-    
-
-
-    </form>
-    </div>
+        </form>
+    </div> 
 </body>
 </html>
